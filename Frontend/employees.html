@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Employees - Employee Management System</title>
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+
+<div class="logo">
+    Employee Management System
+</div>
+
+<nav>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="employees.html">Employees</a>
+    <a href="#" id="logoutBtn">Logout</a>
+</nav>
+
+
+</header>
+
+<main class="employees-container">
+
+
+<div class="page-header">
+
+    <div>
+        <h1>Employees</h1>
+        <p>Manage employee records</p>
+    </div>
+
+    <a href="add-employee.html" class="btn primary-btn">
+        Add Employee
+    </a>
+
+</div>
+
+
+<div class="table-container">
+
+    <table>
+
+        <thead>
+
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Department</th>
+                <th>Salary</th>
+                <th>Actions</th>
+            </tr>
+
+        </thead>
+
+
+        <tbody id="employeeTableBody">
+
+            <!-- Employees will be loaded here using JavaScript -->
+
+        </tbody>
+
+    </table>
+
+</div>
+
+
+</main>
+
+<footer class="footer">
+
+
+<p>© 2026 Employee Management System</p>
+
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

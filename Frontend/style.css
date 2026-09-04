@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: Arial, sans-serif;
+background-color: #f4f6f8;
+color: #222;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+/* Navbar */
+
+.navbar {
+background-color: #1f2937;
+color: white;
+height: 65px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 50px;
+}
+
+.logo {
+font-size: 21px;
+font-weight: bold;
+}
+
+.navbar nav {
+display: flex;
+gap: 25px;
+}
+
+.navbar nav a {
+color: white;
+text-decoration: none;
+font-size: 15px;
+}
+
+.navbar nav a:hover {
+color: #60a5fa;
+}
+
+/* Hero */
+
+.hero {
+flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.hero-content {
+max-width: 650px;
+}
+
+.hero-content h1 {
+font-size: 42px;
+margin-bottom: 15px;
+}
+
+.hero-content p {
+font-size: 18px;
+color: #666;
+margin-bottom: 30px;
+}
+
+.hero-buttons {
+display: flex;
+justify-content: center;
+gap: 15px;
+}
+
+/* Buttons */
+
+.btn {
+display: inline-block;
+padding: 11px 22px;
+border-radius: 6px;
+text-decoration: none;
+border: none;
+cursor: pointer;
+font-size: 15px;
+}
+
+.primary-btn {
+background-color: #2563eb;
+color: white;
+}
+
+.primary-btn:hover {
+background-color: #1d4ed8;
+}
+
+.secondary-btn {
+background-color: #e5e7eb;
+color: #222;
+}
+
+.secondary-btn:hover {
+background-color: #d1d5db;
+}
+
+/* Login / Register / Employee Forms */
+
+.auth-container {
+flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 40px 20px;
+}
+
+.auth-card {
+background-color: white;
+width: 100%;
+max-width: 430px;
+padding: 35px;
+border-radius: 10px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.auth-card h1 {
+margin-bottom: 8px;
+}
+
+.auth-card > p {
+color: #666;
+margin-bottom: 25px;
+}
+
+.form-group {
+margin-bottom: 18px;
+}
+
+.form-group label {
+display: block;
+margin-bottom: 7px;
+font-weight: bold;
+}
+
+.form-group input {
+width: 100%;
+padding: 11px;
+border: 1px solid #d1d5db;
+border-radius: 6px;
+font-size: 15px;
+}
+
+.form-group input:focus {
+outline: none;
+border-color: #2563eb;
+}
+
+.auth-card form .btn {
+width: 100%;
+margin-top: 5px;
+}
+
+.auth-link {
+text-align: center;
+margin-top: 20px;
+}
+
+.auth-link a {
+color: #2563eb;
+text-decoration: none;
+}
+
+/* Dashboard */
+
+.dashboard-container {
+flex: 1;
+padding: 45px 60px;
+}
+
+.dashboard-header {
+margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+font-size: 32px;
+margin-bottom: 8px;
+}
+
+.dashboard-header p {
+color: #666;
+}
+
+.dashboard-cards {
+display: flex;
+gap: 25px;
+flex-wrap: wrap;
+}
+
+.dashboard-card {
+background-color: white;
+width: 300px;
+padding: 25px;
+border-radius: 10px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-card h2 {
+margin-bottom: 10px;
+}
+
+.dashboard-card p {
+color: #666;
+margin-bottom: 20px;
+}
+
+/* Employees */
+
+.employees-container {
+flex: 1;
+padding: 45px 60px;
+}
+
+.page-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 30px;
+}
+
+.page-header h1 {
+font-size: 32px;
+margin-bottom: 8px;
+}
+
+.page-header p {
+color: #666;
+}
+
+.table-container {
+background-color: white;
+border-radius: 10px;
+padding: 20px;
+overflow-x: auto;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+}
+
+th,
+td {
+padding: 14px;
+text-align: left;
+border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+background-color: #f9fafb;
+font-weight: bold;
+}
+
+tr:hover {
+background-color: #f9fafb;
+}
+
+/* Footer */
+
+.footer {
+background-color: #1f2937;
+color: white;
+text-align: center;
+padding: 18px;
+margin-top: auto;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+
+.navbar {
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.navbar nav {
+    gap: 15px;
+}
+
+.hero-content h1 {
+    font-size: 32px;
+}
+
+.dashboard-container,
+.employees-container {
+    padding: 30px 20px;
+}
+
+.page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+
+}
